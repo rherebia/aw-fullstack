@@ -19,6 +19,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { VendasListagemComponent } from './vendas-listagem/vendas-listagem.component';
 import { VendaCadastroComponent } from './venda-cadastro/venda-cadastro.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 registerLocaleData(localePt);
 
@@ -41,7 +42,8 @@ registerLocaleData(localePt);
     InputTextModule,
     PanelModule,
     ButtonModule,
-    GrowlModule
+    GrowlModule,
+    AppRoutingModule
   ],
   providers: [
     {

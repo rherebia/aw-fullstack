@@ -98,9 +98,12 @@
       <input pInputText readonly [value]="venda.total | number:'1.2-2'" />
     </div>
 
-    <div class="ui-g-4">
+    <div class="ui-g-6">
       <button pButton icon="pi pi-check" label="Salvar"
         [disabled]="frm.invalid || venda.itens.length === 0"></button>
+      <a routerLink="/vendas">
+        <p-button label="Voltar"></p-button>
+      </a>
     </div>
   </div>
 </form>
