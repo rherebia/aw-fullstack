@@ -13,8 +13,11 @@ export class VendasListagemComponent implements OnInit {
   constructor(private vendaService : VendasService) { }
 
   ngOnInit() {
+    this.listar();
+  }
+
+  listar() {
     this.vendaService.listar()
       .subscribe(response => this.vendas = response);
   }
-
 }
